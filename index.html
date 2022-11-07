@@ -5,17 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <h1 style="border: 2px solid rgb(20, 8, 5);">WELCOME TO MY WEB SITE</h1>
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #740202;
+}
+</style>
+    
+     
+    
 </head>
 <body>
+    <link rel="stylesheet" href="./style.css">
     <header>
         <nav>
-            <a href="#about section">about</a>
-            <a href="">contact us</a>  
-            <h1>HTML</h1>  
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+              
+              
         </nav>
+        <select>
+            <option value="web tracker">web tracker</option>
+            <option value="AITrack">AI Track</option>
+            <option value="GameTrack">Game Track</option>
+            <option value="DataScienceTrack">Data Science Track</option>
+          </select>
     </header>
     
 </body>
+
 <main>
     <img width="200" src="./HTML5_logo_and_wordmark.svg.png" alt="">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/q3yFo-t1ykw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -38,21 +89,15 @@
      </section>
      <section>
         <br>
-        <h3>contact us</h3>
         <form> <input type="text" placeholder="type your name">
         <input type="email" placeholder="type your email">
         <input type="password" placeholder="type your password">
         </form>
      </section>
-
+     <footer>
+        <ol>
+          
+        </ol>
+     </footer>
 </main>
-<footer>
-    <h4>web ordered language</h4>
-    <ol>
-<li>html</li>
-<li>css</li>
-<li>JavaScript</li>
-    </ol>
-    
-</footer>
 </html>
